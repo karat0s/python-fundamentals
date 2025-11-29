@@ -1,1 +1,3 @@
-"""Stub — completa tu solución aquí."""
+linea = input().strip()
+tokens = linea.split()
+print(" ".join(tokens))
