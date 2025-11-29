@@ -1,0 +1,15 @@
+a_txt = input("a (número): ").strip()
+op = input("Operador (+ - * / // % **): ").strip()
+b_txt = input("b (número): ").strip()
+try:
+    a = float(a_txt); b = float(b_txt)
+    if op == "+": print(a + b)
+    elif op == "-": print(a - b)
+    elif op == "*": print(a * b)
+    elif op == "/": print(a / b) if b != 0 else print("No se puede dividir entre 0")
+    elif op == "//": print(int(a) // int(b)) if b != 0 else print("No se puede dividir entre 0")
+    elif op == "%": print(int(a) % int(b)) if b != 0 else print("No se puede dividir entre 0")
+    elif op == "**": print(a ** b)
+    else: print("Operador no soportado")
+except ValueError:
+    print("Número no válido.")
